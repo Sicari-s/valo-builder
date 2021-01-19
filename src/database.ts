@@ -9,6 +9,7 @@ const sequelize =
     ? new Sequelize({
         dialect: 'sqlite',
         storage: 'src/db/db.sqlite',
+        logging: false,
       })
     : new Sequelize(process.env.DATABASE_URL);
 
